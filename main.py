@@ -14,7 +14,7 @@ load_dotenv()
 def recognize_callback(result):
     # This function will be called with the result of `recognize`
     pyperclip.copy(result)  # Copy result to clipboard
-    time.sleep(0.1)  # Short delay to ensure clipboard is updated
+    time.sleep(0.2)  # Short delay to ensure clipboard is updated
     pyautogui.hotkey('command', 'v')  # Paste content
 
 
