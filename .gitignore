@@ -1,3 +1,5 @@
 /.idea/ruff.xml
 
 /.idea/**
+/.idea
+/.idea/*
