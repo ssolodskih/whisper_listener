@@ -1,9 +1,7 @@
+import os
 from tempfile import NamedTemporaryFile
 
 import openai
-import os
-
-import pyperclip
 import speech_recognition as sr
 from pydub import AudioSegment
 from speech_recognition import AudioData
