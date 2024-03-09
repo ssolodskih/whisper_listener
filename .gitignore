@@ -1,4 +1,7 @@
 /.idea/ruff.xml
+/.idea/misc.xml
+/.ide/workspace.xml
+/.idea/modules.xml
 
 /.idea/**
 /.idea
