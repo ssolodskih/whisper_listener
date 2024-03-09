@@ -47,7 +47,7 @@ def recognize() -> str:
         print("Adjusting for ambient noise, please wait...")
         r.adjust_for_ambient_noise(source)  # Adjust for ambient noise
         print("Please start speaking...")
-        os.system('play --volume=0.1 -nq synth 0.2 sine 300')  # Play a sound to indicate recording has started
+        # os.system('play --volume=0.1 -nq synth 0.2 sine 300')  # Play a sound to indicate recording has started
 
         try:
             # Listen for the first phrase and extract it into audio data
