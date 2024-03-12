@@ -1,7 +1,8 @@
 ## Installation
 Clone repository:
 ```bash
-git clone 
+git clone https://github.com/ssolodskih/whisper_listener
+cd whisper_listener
 ```
 ## Requirements
 1. Install dependencies
