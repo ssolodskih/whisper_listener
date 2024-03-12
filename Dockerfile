@@ -6,10 +6,11 @@ ENV PATH="/root/.local/bin:$PATH"
 
 RUN mkdir /app && \
     apt-get update && \
-    apt-get install -y git curl wget libpq-dev python-dev gcc build-essential libssl-dev cmake sox ffmpeg
+    apt-get install -y git curl wget libpq-dev python-dev-is-python3 gcc build-essential libssl-dev cmake sox ffmpeg openssl libssl-dev portaudio19-dev python3-pyaudio
 
-RUN curl -sSL https://install.python-poetry.org | python3
-RUN poetry self update 1.8.2
+RUN pip install pipx
+RUN pipx install "poetry"
+RUN pipx ensurepath
 
 COPY poetry.lock pyproject.toml /app/
 RUN cd /app/ && \
@@ -20,4 +21,4 @@ COPY . /app
 
 WORKDIR /app/src
 
-CMD python main.py
+CMD python3 main.py
