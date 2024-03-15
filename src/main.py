@@ -25,7 +25,7 @@ def recognize_wrapper():
 
 
 def on_hotkey_pressed():
-    print("Hotkey pressed, activating...")
+    print("🚀 Hotkey pressed, activating...")
     threading.Thread(target=recognize_wrapper).start()  # Use the wrapper function
 
 
@@ -34,6 +34,6 @@ if __name__ == "__main__":
 
     keyboard.add_hotkey('command+f1', on_hotkey_pressed)  # Example: Pressing 'ctrl' and 'alt' together activates the recording
 
-    print("Listening for hotkey...")
+    print("👂 Listening for hotkey...")
 
     keyboard.wait('esc')  # Use 'esc' key to stop listening (or any key of your choice)
